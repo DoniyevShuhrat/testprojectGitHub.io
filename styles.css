@@ -1,0 +1,180 @@
+body {
+    background-color: #4B1B61;
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    /*
+    justify-content: center;
+    */
+    margin-top: 20px;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.invitation {
+    background-color: #F3E9DC;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 90%; /* Adjust to 90% width for mobile */
+    max-width: 500px; /* Max width for desktop */
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.card {
+    position: relative;
+    padding: 20px; /* Reduce padding for better mobile experience */
+    background-color: #FFF;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.decorative-top, .decorative-bottom {
+    height: 5px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 5px;
+}
+
+.names {
+    font-family: "1 Balmoral LET Plain1.0";
+    font-size: 1.8em; /* Adjusted for better mobile view */
+    font-weight: bold;
+    font-style: italic;
+    color: #A67A44;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    letter-spacing: 0.1em;
+    text-transform: capitalize;
+    margin: 12px 0;
+}
+
+.highlight-text {
+    font-family: "1 Balmoral LET Plain1.0";
+    font-size: 1.5em;
+    font-weight: bold;
+    font-style: italic;
+    color: #A67A44;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    letter-spacing: 0.1em;
+    text-transform: capitalize;
+    margin-top: 20px;
+}
+
+.and {
+    font-size: 1.5em;
+    margin: 5px 0;
+    color: #5A3D31;
+}
+
+.invite-text, .date, .note {
+    font-size: 1em; /* Reduced font size for mobile */
+    color: #5A3D31;
+}
+
+.rsvp {
+    margin-top: 20px;
+    font-style: italic;
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.time {
+    margin: 0 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #A67A44;
+}
+
+.map-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #d60051;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.map-button:hover {
+    background-color: #bf0040;
+}
+.backDiv, .backDiv2, .backDiv3 {
+    background-image: url('patternBack.png'); /* Path to your pattern image */
+    background-size: cover; /* Ensure the pattern covers the entire area */
+    background-position: center; /* Center the image */
+    padding: 40px 20px; /* Increase vertical padding to expand height */
+    height: auto; /* Allow the height to adjust based on the content */
+    min-height: auto; /* Ensure minimum height if necessary */
+    text-align: center; /* Center-align text within the div */
+}
+
+
+/* Responsive design for mobile */
+@media (max-width: 600px) {
+    .card {
+        padding: 10px;
+    }
+
+    .names, .highlight-text {
+        font-size: 1.5em;
+    }
+
+    .invite-text, .date, .note {
+        font-size: 0.9em;
+    }
+
+    .time {
+        font-size: 1em;
+    }
+}
+@font-face {
+	font-family: "1 Balmoral LET Plain1.0";
+	src: url("1-balmoral-let-plain1-0/1-balmoral-let-plain1-0.eot"); /* IE9 Compat Modes */
+	src: url("1-balmoral-let-plain1-0/1-balmoral-let-plain1-0.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+		url("1-balmoral-let-plain1-0/1-balmoral-let-plain1-0.otf") format("opentype"), /* Open Type Font */
+		url("1-balmoral-let-plain1-0/1-balmoral-let-plain1-0.svg") format("svg"), /* Legacy iOS */
+		url("1-balmoral-let-plain1-0/1-balmoral-let-plain1-0.ttf") format("truetype"), /* Safari, Android, iOS */
+		url("1-balmoral-let-plain1-0/1-balmoral-let-plain1-0.woff") format("woff"), /* Modern Browsers */
+		url("1-balmoral-let-plain1-0/1-balmoral-let-plain1-0.woff2") format("woff2"); /* Modern Browsers */
+	font-weight: normal;
+	font-style: normal;
+}
+/* Base styles for desktop */
+.names, .highlight-text {
+    font-family: "1 Balmoral LET Plain1.0";
+    font-size: 220%; /* Base font size for larger screens */
+    font-weight: bold;
+    font-style: italic;
+    color: #A67A44;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    letter-spacing: 0.1em;
+    text-transform: capitalize;
+    margin: 12px 0;
+}
+
+/* Medium screens (e.g., tablets) */
+@media (max-width: 768px) {
+    .names, .highlight-text {
+        font-size: 180%; /* Slightly smaller font size for tablets */
+        margin: 10px 0; /* Adjust margin for better spacing on smaller screens */
+        letter-spacing: 0.08em; /* Slightly reduced letter spacing */
+    }
+}
+
+/* Small screens (e.g., mobile) */
+@media (max-width: 480px) {
+    .names, .highlight-text {
+        font-size: 150%; /* Smaller font size for mobile screens */
+        margin: 8px 0; /* Adjust margin for tight spacing */
+        letter-spacing: 0.05em; /* Further reduced letter spacing for readability */
+    }
+}
